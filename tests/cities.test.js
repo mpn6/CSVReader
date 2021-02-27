@@ -13,7 +13,7 @@ test('Can create a grades object', () => {
     let grade = new Grade();
     expect(grade).toBeInstanceOf(Grade);
 });
-test('Can create a city object by factory', () => {
+test('Can create a grades object by factory', () => {
     let grade = Grade.create();
     expect(grade).toBeInstanceOf(Grade);
 });
