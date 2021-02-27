@@ -1,6 +1,6 @@
 module.exports = class Read {
     static getRecords(filename, Model) {
-        const file = require('../fileOps/File');
+        const file = require('../src/fileOps/File');
         const fs = require('fs');
         const parse = require('csv-parse/lib/sync')
         let absolutePath = file.getAbsolutePath(filename);
