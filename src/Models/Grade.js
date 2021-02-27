@@ -13,7 +13,7 @@ module.exports = class Grade {
         }
 
     }
-    //Factory Method to Create a City
+    //Factory Method to Create a Grade
     static create(data) {
         return new Grade(data);
     }

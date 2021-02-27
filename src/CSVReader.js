@@ -1,4 +1,4 @@
-module.exports = class Read {
+module.exports = class CSVReader {
     static getRecords(filename, Model) {
         const file = require('../src/fileOps/File');
         const fs = require('fs');

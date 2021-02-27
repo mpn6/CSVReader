@@ -1,4 +1,4 @@
-const CSVRead = require('../src/Read');
+const CSVRead = require('../src/CSVReader');
 const City = require('../src/Models/City')
 const Grade = require('../src/Models/Grade')
 const expect = require('expect');
