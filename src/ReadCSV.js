@@ -31,6 +31,5 @@ class ReadCSV{
 
         return recordsList;
     }
-
 }
 module.exports = ReadCSV;
