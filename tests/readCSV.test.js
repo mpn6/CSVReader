@@ -15,12 +15,21 @@ test('Can Read CSV File - grades.csv', () => {
     expect(records.length).toBe(4);
 });
 
-test('Can create a readCSV object', () => {
+test('Can create a ReadCSV object', () => {
     let readCSV = new ReadCSV();
     expect(readCSV).toBeInstanceOf(ReadCSV);
 });
 
-test('Can create a readCSV object by factory', () => {
+test('Can create a ReadCSV object by factory', () => {
     let readCSV = ReadCSV.create();
     expect(readCSV).toBeInstanceOf(ReadCSV);
+});
+
+test('Create a ReadCSV object and get its records ', () => {
+    let readCSV = ReadCSV.create();
+    let filename  = 'data/grades.csv';
+    let records = ReadCSV.getRecords(filename, Grade);
+
+    expect(readCSV).toBeInstanceOf(ReadCSV);
+    expect(records.length).toBe(4);
 });
